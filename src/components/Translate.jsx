@@ -10,7 +10,7 @@ const Translate = () => {
   const [languages, setLanguages] = useState([]);
   const [text, setText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
-  const [sourecText, setSourceText] = useState("");
+  const [sourecText, setSourceText] = useState("no");
   const [targetText, setTargetText] = useState("");
   const [detectedSourceText, setDetectedSourceText] = useState("");
   const [targetLanguage, setTargetLanguage] = useState('')
@@ -55,7 +55,7 @@ const Translate = () => {
       `https://api.mymemory.translated.net/get?q=${transcript ? transcript : text}&langpair=${sourecText}|${targetText}`
     );
     response.then(function (res) {
-        setTargetLanguage(res.data.matches[0].target)
+      setTargetLanguage(res.data.matches[0].target)
       setTranslatedText(res.data.responseData.translatedText);
     });
   }
@@ -109,7 +109,7 @@ const Translate = () => {
           <textarea
             readOnly
             value={translatedText}
-            placeholder="Enter your text"
+            placeholder="Your Translated Text"
             rows={20}
             cols={60}
             name=""
