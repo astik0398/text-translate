@@ -1,0 +1,55 @@
+.container{
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-top-left-radius: 15px;   
+    border-bottom-left-radius: 15px; 
+}
+
+.right-div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+button{
+    background-color: black;
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+textarea{
+    border: 1px solid rgb(209, 206, 206);
+    padding: 10px;
+    border-radius: 5px;
+    resize:none
+}
+
+select{
+    height: 30px;
+    border-radius: 10px;
+}
