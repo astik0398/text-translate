@@ -33,6 +33,11 @@
     border-bottom-right-radius: 15px;
 }
 
+.filter-green{
+    filter: brightness(0) saturate(100%) invert(11%) sepia(97%) saturate(5439%) hue-rotate(357deg) brightness(107%) contrast(114%)
+
+}
+
 button{
     background-color: black;
     height: 35px;
